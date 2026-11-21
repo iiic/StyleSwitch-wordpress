@@ -1,0 +1,497 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: StyleSwitch 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/style-switch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-21T18:17:37+00:00\n"
+"PO-Revision-Date: 2026-11-21 18:19+0000\n"
+"Last-Translator: ic\n"
+"Language-Team: Czech\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Domain: style-switch\n"
+
+#. Plugin Name of the plugin
+msgid "StyleSwitch"
+msgstr "StyleSwitch"
+
+#. Plugin URI of the plugin
+msgid "https://iiic.dev/style-switch"
+msgstr "https://iiic.dev/style-switch"
+
+#. Description of the plugin
+msgid "A widget that lets visitors switch the site between a light and a dark color scheme. Built on the StyleSwitch library: alternate style sheets, prefers-color-scheme and a cookie with the visitor's choice."
+msgstr "Widget, kterým si návštěvníci přepnou web mezi světlým a tmavým barevným schématem. Postavený na knihovně StyleSwitch: alternativní styly, prefers-color-scheme a cookie s volbou návštěvníka."
+
+#. Author of the plugin
+msgid "ic"
+msgstr "ic"
+
+#. Author URI of the plugin
+msgid "https://iiic.dev/"
+msgstr "https://iiic.dev/"
+
+#: includes/class-settings.php:163
+msgid "Settings"
+msgstr "Nastavení"
+
+#: includes/class-settings.php:173
+msgid "StyleSwitch settings"
+msgstr "Nastavení StyleSwitch"
+
+#: includes/class-settings.php:222
+msgid "Styles"
+msgstr "Styly"
+
+#: includes/class-settings.php:223
+msgid "The style sheets the visitor switches between. The style sheets of the plugin only set the CSS property color-scheme of the page, the colors come from the theme ( for example with the CSS function light-dark() )."
+msgstr "Styly, mezi kterými návštěvník přepíná. Styly pluginu nastavují jen CSS vlastnost color-scheme stránky, barvy dodává šablona (například CSS funkcí light-dark())."
+
+#: includes/class-settings.php:226
+msgid "Behavior"
+msgstr "Chování"
+
+#: includes/class-settings.php:230
+msgid "Cookie"
+msgstr "Cookie"
+
+#. translators: %s: name of the cookie
+#: includes/class-settings.php:232
+#, php-format
+msgid "The choice of the visitor is stored in the cookie \"%s\" ( its name cannot be changed, see the fixed settings below )."
+msgstr "Volba návštěvníka se ukládá do cookie „%s“ (její název změnit nejde, viz pevná nastavení níže)."
+
+#: includes/class-settings.php:235
+msgid "Texts"
+msgstr "Texty"
+
+#: includes/class-settings.php:236
+msgid "Empty fields use the default text shown in grey."
+msgstr "Prázdná pole použijí výchozí text zobrazený šedě."
+
+#: includes/class-settings.php:239 includes/class-settings.php:431
+msgid "Style without CSS"
+msgstr "Styl bez CSS"
+
+#: includes/class-settings.php:240
+msgid "Offers the page without any CSS ( naked HTML ) as one more style, for example for the CSS Naked Day. There are three styles then, so the widget shows a drop-down list instead of a switch."
+msgstr "Nabídne stránku úplně bez CSS (čisté HTML) jako další styl, například pro CSS Naked Day. Styly jsou pak tři, a tak widget místo přepínače zobrazí rozbalovací seznam."
+
+#: includes/class-settings.php:243
+msgid "Markup of the form control"
+msgstr "HTML ovládacího prvku"
+
+#: includes/class-settings.php:244
+msgid "HTML which StyleSwitch builds in the widget."
+msgstr "HTML, které StyleSwitch sestaví ve widgetu."
+
+#: includes/class-settings.php:266
+msgid "Role of the style sheet in the document ( persistent, preferred, alternate ) as a tooltip. Meant for developers."
+msgstr "Role stylu v dokumentu (persistent, preferred, alternate) jako bublinová nápověda. Určeno pro vývojáře."
+
+#: includes/class-settings.php:273
+msgid "Style before the visitor chooses"
+msgstr "Styl, dokud si návštěvník nevybere"
+
+#: includes/class-settings.php:275
+msgid "By the operating system of the visitor"
+msgstr "Podle operačního systému návštěvníka"
+
+#: includes/class-settings.php:276 includes/class-settings.php:285
+#: style-switch.php:178
+msgid "Light"
+msgstr "Světlý"
+
+#: includes/class-settings.php:277 includes/class-settings.php:292
+#: style-switch.php:184
+msgid "Dark"
+msgstr "Tmavý"
+
+#: includes/class-settings.php:279
+msgid "By the operating system: the dark style sheet gets media=\"(prefers-color-scheme: dark)\" ( \"preferred\" style sheet ). Light or dark: the other style is only an \"alternate\" style sheet, used after the visitor chooses it."
+msgstr "Podle operačního systému: tmavý styl dostane media=\"(prefers-color-scheme: dark)\" (styl „preferred“). Světlý nebo tmavý: druhý styl je jen „alternate“ a použije se, až si ho návštěvník vybere."
+
+#: includes/class-settings.php:284
+msgid "Name of the light style"
+msgstr "Název světlého stylu"
+
+#: includes/class-settings.php:286
+msgid "Attribute title of the style sheet, shown in the widget ( and in Firefox in View → Page Style )."
+msgstr "Atribut title stylu, zobrazí se ve widgetu (a ve Firefoxu v nabídce Zobrazit → Styl stránky)."
+
+#: includes/class-settings.php:291
+msgid "Name of the dark style"
+msgstr "Název tmavého stylu"
+
+#: includes/class-settings.php:298
+msgid "When the operating system switches between light and dark colors"
+msgstr "Když operační systém přepne mezi světlými a tmavými barvami"
+
+#: includes/class-settings.php:301
+msgid "Follow it only until the visitor chooses a style"
+msgstr "Řídit se jím, jen dokud si návštěvník nevybere styl"
+
+#: includes/class-settings.php:302
+msgid "Always follow it, even when the visitor has chosen a style ( the choice is deleted )"
+msgstr "Řídit se jím vždy, i když si návštěvník styl vybral (volba se smaže)"
+
+#: includes/class-settings.php:303
+msgid "Never follow it in the widget"
+msgstr "Ve widgetu se jím neřídit nikdy"
+
+#: includes/class-settings.php:309
+msgid "Order"
+msgstr "Pořadí"
+
+#: includes/class-settings.php:310
+msgid "Offer the styles in reverse order"
+msgstr "Nabízet styly v opačném pořadí"
+
+#: includes/class-settings.php:316
+msgid "Server side"
+msgstr "Na serveru"
+
+#: includes/class-settings.php:317
+msgid "Apply the choice of the visitor already in the HTML of the page"
+msgstr "Použít volbu návštěvníka už v HTML stránky"
+
+#: includes/class-settings.php:318
+msgid "The page is shown in the chosen style from the first moment. Turn it off when the HTML of the pages is cached for all visitors together ( full page cache ), the choice is then applied by JavaScript after the page loads."
+msgstr "Stránka se zobrazí ve zvoleném stylu hned od začátku. Vypněte, pokud se HTML stránek ukládá do mezipaměti pro všechny návštěvníky společně (full page cache), volbu pak použije JavaScript po načtení stránky."
+
+#: includes/class-settings.php:324
+msgid "Keep the choice for ( days )"
+msgstr "Pamatovat si volbu (dní)"
+
+#: includes/class-settings.php:332
+msgid "Path"
+msgstr "Cesta"
+
+#: includes/class-settings.php:334
+msgid "Part of the site the choice applies to, \"/\" is the whole domain."
+msgstr "Část webu, pro kterou volba platí, „/“ je celá doména."
+
+#: includes/class-settings.php:350
+msgid "Partitioned"
+msgstr "Partitioned"
+
+#: includes/class-settings.php:351
+msgid "Partitioned cookie ( CHIPS )"
+msgstr "Rozdělená cookie (partitioned, CHIPS)"
+
+#: includes/class-settings.php:353
+msgid "When the site is embedded in another site, the choice is kept separately there."
+msgstr "Když je web vložený do jiného webu, volba se tam ukládá zvlášť."
+
+#: includes/class-settings.php:359
+msgid "Caption of the form control"
+msgstr "Popisek ovládacího prvku"
+
+#: includes/class-settings.php:361 includes/class-widget.php:89
+#: style-switch.php:481
+msgid "Color scheme"
+msgstr "Barevné schéma"
+
+#: includes/class-settings.php:362
+msgid "Used when the widget has no title."
+msgstr "Použije se, když widget nemá název."
+
+#: includes/class-settings.php:367
+msgid "Caption of the switch"
+msgstr "Popisek přepínače"
+
+#: includes/class-settings.php:369
+msgid "Only for the switch, instead of the title of the widget."
+msgstr "Jen pro přepínač, místo názvu widgetu."
+
+#: includes/class-settings.php:374
+msgid "Tooltip of the switch"
+msgstr "Bublinová nápověda přepínače"
+
+#: includes/class-settings.php:380
+msgid "Text of the switch turned off"
+msgstr "Text vypnutého přepínače"
+
+#: includes/class-settings.php:382
+msgid "name of the first style"
+msgstr "název prvního stylu"
+
+#: includes/class-settings.php:387
+msgid "Text of the switch turned on"
+msgstr "Text zapnutého přepínače"
+
+#: includes/class-settings.php:389
+msgid "name of the second style"
+msgstr "název druhého stylu"
+
+#: includes/class-settings.php:394
+msgid "Divider in the tooltip of the switch"
+msgstr "Oddělovač v bublinové nápovědě přepínače"
+
+#: includes/class-settings.php:397
+msgid "Joins the roles of the style sheets when they are shown as the tooltip ( see Markup ). Spaces are kept."
+msgstr "Spojuje role stylů, když se zobrazují jako bublinová nápověda (viz HTML ovládacího prvku). Mezery se zachovají."
+
+#: includes/class-settings.php:402
+msgid "Caption of the drop-down list"
+msgstr "Popisek rozbalovacího seznamu"
+
+#: includes/class-settings.php:404
+msgid "Only for the drop-down list, instead of the title of the widget."
+msgstr "Jen pro rozbalovací seznam, místo názvu widgetu."
+
+#: includes/class-settings.php:409
+msgid "Group of the styles in the drop-down list"
+msgstr "Skupina stylů v rozbalovacím seznamu"
+
+#: includes/class-settings.php:411
+msgid "Label of the optgroup with the styles. Empty: no group."
+msgstr "Popisek skupiny (optgroup) se styly. Prázdné: bez skupiny."
+
+#: includes/class-settings.php:416
+msgid "Group of the style without CSS in the drop-down list"
+msgstr "Skupina stylu bez CSS v rozbalovacím seznamu"
+
+#: includes/class-settings.php:418
+msgid "Label of the optgroup with the style without CSS. Empty: no group."
+msgstr "Popisek skupiny (optgroup) se stylem bez CSS. Prázdné: bez skupiny."
+
+#: includes/class-settings.php:423
+msgid "Caption of the radio buttons"
+msgstr "Popisek přepínacích tlačítek"
+
+#: includes/class-settings.php:425
+msgid "Only for the radio buttons, instead of the title of the widget."
+msgstr "Jen pro přepínací tlačítka, místo názvu widgetu."
+
+#: includes/class-settings.php:432
+msgid "Offer the page without any CSS as one more style"
+msgstr "Nabízet stránku úplně bez CSS jako další styl"
+
+#: includes/class-settings.php:438
+msgid "Name of the style without CSS"
+msgstr "Název stylu bez CSS"
+
+#: includes/class-settings.php:440 style-switch.php:504
+msgid "Without style (naked HTML)"
+msgstr "Bez stylu (čisté HTML)"
+
+#: includes/class-settings.php:445
+msgid "CSS Naked Day"
+msgstr "CSS Naked Day"
+
+#: includes/class-settings.php:446
+msgid "Switch to the style without CSS automatically on the day below and back the next day"
+msgstr "V den níže automaticky přepnout na styl bez CSS a další den zpět"
+
+#: includes/class-settings.php:448
+msgid "Needs the style without CSS turned on. The day is the date of the visitor."
+msgstr "Vyžaduje zapnutý styl bez CSS. Rozhoduje datum u návštěvníka."
+
+#: includes/class-settings.php:453
+msgid "Month of the CSS Naked Day"
+msgstr "Měsíc CSS Naked Day"
+
+#: includes/class-settings.php:460
+msgid "Day of the CSS Naked Day"
+msgstr "Den CSS Naked Day"
+
+#: includes/class-settings.php:469
+msgid "Prefix of the id"
+msgstr "Předpona id"
+
+#: includes/class-settings.php:471
+msgid "A random string is appended. Letters, digits, \"-\" and \"_\"."
+msgstr "Připojí se k ní náhodný řetězec. Písmena, číslice, „-“ a „_“."
+
+#: includes/class-settings.php:476
+msgid "Switch: element of the caption"
+msgstr "Přepínač: element popisku"
+
+#: includes/class-settings.php:483
+msgid "Switch: element of the state text"
+msgstr "Přepínač: element textu stavu"
+
+#: includes/class-settings.php:490
+msgid "Switch: class of the label"
+msgstr "Přepínač: třída elementu label"
+
+#: includes/class-settings.php:492
+msgid "StyleSwitch uses \"switch\" by default, the plugin uses its own class because themes often style \"switch\"."
+msgstr "StyleSwitch ve výchozím stavu používá „switch“, plugin vlastní třídu, protože šablony třídu „switch“ často stylují."
+
+#: includes/class-settings.php:497
+msgid "Switch: class of the visual switch"
+msgstr "Přepínač: třída grafického přepínače"
+
+#: includes/class-settings.php:503
+msgid "Switch: class of the state"
+msgstr "Přepínač: třída stavu"
+
+#: includes/class-settings.php:509
+msgid "Switch: look"
+msgstr "Přepínač: vzhled"
+
+#: includes/class-settings.php:510
+msgid "Load the built-in look of the switch"
+msgstr "Načíst vestavěný vzhled přepínače"
+
+#: includes/class-settings.php:511
+msgid "assets/css/switch.css, it expects the default class names above. Turn it off when the theme styles the switch."
+msgstr "assets/css/switch.css, počítá s výchozími názvy tříd výše. Vypněte, pokud přepínač styluje šablona."
+
+#: includes/class-settings.php:516
+msgid "Switch: roles"
+msgstr "Přepínač: role"
+
+#: includes/class-settings.php:517
+msgid "Roles of the style sheets as the tooltip"
+msgstr "Role stylů jako bublinová nápověda"
+
+#: includes/class-settings.php:524
+msgid "Drop-down list: element of the caption"
+msgstr "Rozbalovací seznam: element popisku"
+
+#: includes/class-settings.php:531
+msgid "Drop-down list: roles"
+msgstr "Rozbalovací seznam: role"
+
+#: includes/class-settings.php:532
+msgid "Roles of the style sheets as tooltips of the options"
+msgstr "Role stylů jako bublinová nápověda položek seznamu"
+
+#: includes/class-settings.php:539
+msgid "Radio buttons: element of the caption"
+msgstr "Přepínací tlačítka: element popisku"
+
+#: includes/class-settings.php:546
+msgid "Radio buttons: roles"
+msgstr "Přepínací tlačítka: role"
+
+#: includes/class-settings.php:547
+msgid "Roles of the style sheets as tooltips of the items"
+msgstr "Role stylů jako bublinová nápověda tlačítek"
+
+#: includes/class-settings.php:617
+msgid "The active theme or another plugin adjusts the styles with the filter style_switch_styles, it can override the settings in this section."
+msgstr "Aktivní šablona nebo jiný plugin upravuje styly filtrem style_switch_styles a může tak nastavení v této sekci přebít."
+
+#: includes/class-settings.php:694
+msgid "Settings of the StyleSwitch library for all StyleSwitch widgets. The title of the widget and the type of the form control ( switch, drop-down list, radio buttons ) are set in each widget."
+msgstr "Nastavení knihovny StyleSwitch pro všechny widgety StyleSwitch. Název widgetu a typ ovládacího prvku (přepínač, rozbalovací seznam, přepínací tlačítka) se nastavují v každém widgetu."
+
+#: includes/class-settings.php:695
+msgid "Widgets"
+msgstr "Widgety"
+
+#: includes/class-settings.php:697
+msgid "Documentation of StyleSwitch"
+msgstr "Dokumentace StyleSwitch"
+
+#: includes/class-settings.php:700
+msgid "The StyleSwitch widget is not in any widget area yet, nothing is shown on the site."
+msgstr "Widget StyleSwitch zatím není v žádné oblasti widgetů, na webu se nic nezobrazí."
+
+#: includes/class-settings.php:710
+msgid "Fixed settings"
+msgstr "Pevná nastavení"
+
+#: includes/class-settings.php:711
+msgid "These settings of StyleSwitch are given by the plugin."
+msgstr "Tato nastavení StyleSwitch určuje plugin."
+
+#: includes/class-settings.php:715
+msgid "Setting"
+msgstr "Nastavení"
+
+#: includes/class-settings.php:716
+msgid "Value"
+msgstr "Hodnota"
+
+#: includes/class-settings.php:717
+msgid "Why"
+msgstr "Proč"
+
+#: includes/class-settings.php:741
+msgid "The widget writes the settings into the element with this id."
+msgstr "Widget zapisuje nastavení do elementu s tímto id."
+
+#: includes/class-settings.php:742
+msgid "The widget outputs the element <style-switch>, StyleSwitch fills it with the form control."
+msgstr "Widget vypíše element <style-switch> a StyleSwitch do něj vloží ovládací prvek."
+
+#: includes/class-settings.php:743
+msgid "The cookie listener ( live switching ) and the server side work with all style sheets of the page."
+msgstr "Posluchač cookie (přepínání bez načtení stránky) i server pracují se všemi styly stránky."
+
+#: includes/class-settings.php:744
+msgid "The cookie listener, bundled without changes, has the name hard-coded."
+msgstr "Posluchač cookie, přibalený beze změn, má název napevno."
+
+#: includes/class-settings.php:745
+msgid "per widget"
+msgstr "podle widgetu"
+
+#: includes/class-settings.php:745
+msgid "Set in each widget."
+msgstr "Nastavuje se v každém widgetu."
+
+#: includes/class-settings.php:746
+msgid "Used only when there is no container, the widget always outputs one."
+msgstr "Použije se jen bez kontejneru, widget ho vypisuje vždy."
+
+#: includes/class-settings.php:747
+msgid "The widget needs StyleSwitch to run by itself after it loads."
+msgstr "Widget potřebuje, aby se StyleSwitch po načtení spustil sám."
+
+#: includes/class-widget.php:23
+msgid "StyleSwitch – light / dark"
+msgstr "StyleSwitch – světlý / tmavý"
+
+#: includes/class-widget.php:26
+msgid "Lets visitors switch the site between the light and the dark color scheme."
+msgstr "Návštěvníci si přepnou web mezi světlým a tmavým barevným schématem."
+
+#: includes/class-widget.php:92
+msgid "Switch (for two styles, otherwise a drop-down list)"
+msgstr "Přepínač (pro dva styly, jinak rozbalovací seznam)"
+
+#: includes/class-widget.php:93
+msgid "Drop-down list"
+msgstr "Rozbalovací seznam"
+
+#: includes/class-widget.php:94
+msgid "Radio buttons"
+msgstr "Přepínací tlačítka (radio)"
+
+#: includes/class-widget.php:98
+msgid "Title:"
+msgstr "Název:"
+
+#: includes/class-widget.php:102
+msgid "Form control:"
+msgstr "Ovládací prvek:"
+
+#: includes/class-widget.php:109
+msgid "Only one StyleSwitch widget is shown on a page. Visitors without JavaScript or with a browser without the Cookie Store API do not see it."
+msgstr "Na stránce se zobrazí jen jeden widget StyleSwitch. Návštěvníci bez JavaScriptu nebo s prohlížečem bez Cookie Store API ho neuvidí."
+
+#: includes/class-widget.php:111
+msgid "More settings: Settings → StyleSwitch"
+msgstr "Další nastavení: Nastavení → StyleSwitch"
+
+#: style-switch.php:487
+msgid "off"
+msgstr "vypnuto"
+
+#: style-switch.php:490
+msgid "on"
+msgstr "zapnuto"
+
+#. translators: %s: name of the cookie
+#: style-switch.php:583
+#, php-format
+msgid "When you choose a color scheme of this site, your choice is saved in the cookie \"%s\" in your browser, so that the site is shown in the same color scheme on your next visit. The cookie contains only the addresses of the style sheets of this site and whether each of them is turned on. It is not used to identify or track you."
+msgstr "Když si na tomto webu vyberete barevné schéma, vaše volba se uloží do cookie „%s“ ve vašem prohlížeči, aby se vám web při další návštěvě zobrazil ve stejném barevném schématu. Cookie obsahuje jen adresy stylů tohoto webu a údaj, zda je každý z nich zapnutý. Nepoužívá se k vaší identifikaci ani ke sledování."

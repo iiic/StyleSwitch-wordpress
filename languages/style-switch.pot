@@ -1,0 +1,494 @@
+# Copyright (C) 2026 ic
+# This file is distributed under the GPL-3.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: StyleSwitch 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/style-switch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-21T18:17:37+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Domain: style-switch\n"
+
+#. Plugin Name of the plugin
+msgid "StyleSwitch"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://iiic.dev/style-switch"
+msgstr ""
+
+#. Description of the plugin
+msgid "A widget that lets visitors switch the site between a light and a dark color scheme. Built on the StyleSwitch library: alternate style sheets, prefers-color-scheme and a cookie with the visitor's choice."
+msgstr ""
+
+#. Author of the plugin
+msgid "ic"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://iiic.dev/"
+msgstr ""
+
+#: includes/class-settings.php:163
+msgid "Settings"
+msgstr ""
+
+#: includes/class-settings.php:173
+msgid "StyleSwitch settings"
+msgstr ""
+
+#: includes/class-settings.php:222
+msgid "Styles"
+msgstr ""
+
+#: includes/class-settings.php:223
+msgid "The style sheets the visitor switches between. The style sheets of the plugin only set the CSS property color-scheme of the page, the colors come from the theme ( for example with the CSS function light-dark() )."
+msgstr ""
+
+#: includes/class-settings.php:226
+msgid "Behavior"
+msgstr ""
+
+#: includes/class-settings.php:230
+msgid "Cookie"
+msgstr ""
+
+#. translators: %s: name of the cookie
+#: includes/class-settings.php:232
+#, php-format
+msgid "The choice of the visitor is stored in the cookie \"%s\" ( its name cannot be changed, see the fixed settings below )."
+msgstr ""
+
+#: includes/class-settings.php:235
+msgid "Texts"
+msgstr ""
+
+#: includes/class-settings.php:236
+msgid "Empty fields use the default text shown in grey."
+msgstr ""
+
+#: includes/class-settings.php:239 includes/class-settings.php:431
+msgid "Style without CSS"
+msgstr ""
+
+#: includes/class-settings.php:240
+msgid "Offers the page without any CSS ( naked HTML ) as one more style, for example for the CSS Naked Day. There are three styles then, so the widget shows a drop-down list instead of a switch."
+msgstr ""
+
+#: includes/class-settings.php:243
+msgid "Markup of the form control"
+msgstr ""
+
+#: includes/class-settings.php:244
+msgid "HTML which StyleSwitch builds in the widget."
+msgstr ""
+
+#: includes/class-settings.php:266
+msgid "Role of the style sheet in the document ( persistent, preferred, alternate ) as a tooltip. Meant for developers."
+msgstr ""
+
+#: includes/class-settings.php:273
+msgid "Style before the visitor chooses"
+msgstr ""
+
+#: includes/class-settings.php:275
+msgid "By the operating system of the visitor"
+msgstr ""
+
+#: includes/class-settings.php:276 includes/class-settings.php:285 style-switch.php:178
+msgid "Light"
+msgstr ""
+
+#: includes/class-settings.php:277 includes/class-settings.php:292 style-switch.php:184
+msgid "Dark"
+msgstr ""
+
+#: includes/class-settings.php:279
+msgid "By the operating system: the dark style sheet gets media=\"(prefers-color-scheme: dark)\" ( \"preferred\" style sheet ). Light or dark: the other style is only an \"alternate\" style sheet, used after the visitor chooses it."
+msgstr ""
+
+#: includes/class-settings.php:284
+msgid "Name of the light style"
+msgstr ""
+
+#: includes/class-settings.php:286
+msgid "Attribute title of the style sheet, shown in the widget ( and in Firefox in View → Page Style )."
+msgstr ""
+
+#: includes/class-settings.php:291
+msgid "Name of the dark style"
+msgstr ""
+
+#: includes/class-settings.php:298
+msgid "When the operating system switches between light and dark colors"
+msgstr ""
+
+#: includes/class-settings.php:301
+msgid "Follow it only until the visitor chooses a style"
+msgstr ""
+
+#: includes/class-settings.php:302
+msgid "Always follow it, even when the visitor has chosen a style ( the choice is deleted )"
+msgstr ""
+
+#: includes/class-settings.php:303
+msgid "Never follow it in the widget"
+msgstr ""
+
+#: includes/class-settings.php:309
+msgid "Order"
+msgstr ""
+
+#: includes/class-settings.php:310
+msgid "Offer the styles in reverse order"
+msgstr ""
+
+#: includes/class-settings.php:316
+msgid "Server side"
+msgstr ""
+
+#: includes/class-settings.php:317
+msgid "Apply the choice of the visitor already in the HTML of the page"
+msgstr ""
+
+#: includes/class-settings.php:318
+msgid "The page is shown in the chosen style from the first moment. Turn it off when the HTML of the pages is cached for all visitors together ( full page cache ), the choice is then applied by JavaScript after the page loads."
+msgstr ""
+
+#: includes/class-settings.php:324
+msgid "Keep the choice for ( days )"
+msgstr ""
+
+#: includes/class-settings.php:332
+msgid "Path"
+msgstr ""
+
+#: includes/class-settings.php:334
+msgid "Part of the site the choice applies to, \"/\" is the whole domain."
+msgstr ""
+
+#: includes/class-settings.php:350
+msgid "Partitioned"
+msgstr ""
+
+#: includes/class-settings.php:351
+msgid "Partitioned cookie ( CHIPS )"
+msgstr ""
+
+#: includes/class-settings.php:353
+msgid "When the site is embedded in another site, the choice is kept separately there."
+msgstr ""
+
+#: includes/class-settings.php:359
+msgid "Caption of the form control"
+msgstr ""
+
+#: includes/class-settings.php:361 includes/class-widget.php:89 style-switch.php:481
+msgid "Color scheme"
+msgstr ""
+
+#: includes/class-settings.php:362
+msgid "Used when the widget has no title."
+msgstr ""
+
+#: includes/class-settings.php:367
+msgid "Caption of the switch"
+msgstr ""
+
+#: includes/class-settings.php:369
+msgid "Only for the switch, instead of the title of the widget."
+msgstr ""
+
+#: includes/class-settings.php:374
+msgid "Tooltip of the switch"
+msgstr ""
+
+#: includes/class-settings.php:380
+msgid "Text of the switch turned off"
+msgstr ""
+
+#: includes/class-settings.php:382
+msgid "name of the first style"
+msgstr ""
+
+#: includes/class-settings.php:387
+msgid "Text of the switch turned on"
+msgstr ""
+
+#: includes/class-settings.php:389
+msgid "name of the second style"
+msgstr ""
+
+#: includes/class-settings.php:394
+msgid "Divider in the tooltip of the switch"
+msgstr ""
+
+#: includes/class-settings.php:397
+msgid "Joins the roles of the style sheets when they are shown as the tooltip ( see Markup ). Spaces are kept."
+msgstr ""
+
+#: includes/class-settings.php:402
+msgid "Caption of the drop-down list"
+msgstr ""
+
+#: includes/class-settings.php:404
+msgid "Only for the drop-down list, instead of the title of the widget."
+msgstr ""
+
+#: includes/class-settings.php:409
+msgid "Group of the styles in the drop-down list"
+msgstr ""
+
+#: includes/class-settings.php:411
+msgid "Label of the optgroup with the styles. Empty: no group."
+msgstr ""
+
+#: includes/class-settings.php:416
+msgid "Group of the style without CSS in the drop-down list"
+msgstr ""
+
+#: includes/class-settings.php:418
+msgid "Label of the optgroup with the style without CSS. Empty: no group."
+msgstr ""
+
+#: includes/class-settings.php:423
+msgid "Caption of the radio buttons"
+msgstr ""
+
+#: includes/class-settings.php:425
+msgid "Only for the radio buttons, instead of the title of the widget."
+msgstr ""
+
+#: includes/class-settings.php:432
+msgid "Offer the page without any CSS as one more style"
+msgstr ""
+
+#: includes/class-settings.php:438
+msgid "Name of the style without CSS"
+msgstr ""
+
+#: includes/class-settings.php:440 style-switch.php:504
+msgid "Without style (naked HTML)"
+msgstr ""
+
+#: includes/class-settings.php:445
+msgid "CSS Naked Day"
+msgstr ""
+
+#: includes/class-settings.php:446
+msgid "Switch to the style without CSS automatically on the day below and back the next day"
+msgstr ""
+
+#: includes/class-settings.php:448
+msgid "Needs the style without CSS turned on. The day is the date of the visitor."
+msgstr ""
+
+#: includes/class-settings.php:453
+msgid "Month of the CSS Naked Day"
+msgstr ""
+
+#: includes/class-settings.php:460
+msgid "Day of the CSS Naked Day"
+msgstr ""
+
+#: includes/class-settings.php:469
+msgid "Prefix of the id"
+msgstr ""
+
+#: includes/class-settings.php:471
+msgid "A random string is appended. Letters, digits, \"-\" and \"_\"."
+msgstr ""
+
+#: includes/class-settings.php:476
+msgid "Switch: element of the caption"
+msgstr ""
+
+#: includes/class-settings.php:483
+msgid "Switch: element of the state text"
+msgstr ""
+
+#: includes/class-settings.php:490
+msgid "Switch: class of the label"
+msgstr ""
+
+#: includes/class-settings.php:492
+msgid "StyleSwitch uses \"switch\" by default, the plugin uses its own class because themes often style \"switch\"."
+msgstr ""
+
+#: includes/class-settings.php:497
+msgid "Switch: class of the visual switch"
+msgstr ""
+
+#: includes/class-settings.php:503
+msgid "Switch: class of the state"
+msgstr ""
+
+#: includes/class-settings.php:509
+msgid "Switch: look"
+msgstr ""
+
+#: includes/class-settings.php:510
+msgid "Load the built-in look of the switch"
+msgstr ""
+
+#: includes/class-settings.php:511
+msgid "assets/css/switch.css, it expects the default class names above. Turn it off when the theme styles the switch."
+msgstr ""
+
+#: includes/class-settings.php:516
+msgid "Switch: roles"
+msgstr ""
+
+#: includes/class-settings.php:517
+msgid "Roles of the style sheets as the tooltip"
+msgstr ""
+
+#: includes/class-settings.php:524
+msgid "Drop-down list: element of the caption"
+msgstr ""
+
+#: includes/class-settings.php:531
+msgid "Drop-down list: roles"
+msgstr ""
+
+#: includes/class-settings.php:532
+msgid "Roles of the style sheets as tooltips of the options"
+msgstr ""
+
+#: includes/class-settings.php:539
+msgid "Radio buttons: element of the caption"
+msgstr ""
+
+#: includes/class-settings.php:546
+msgid "Radio buttons: roles"
+msgstr ""
+
+#: includes/class-settings.php:547
+msgid "Roles of the style sheets as tooltips of the items"
+msgstr ""
+
+#: includes/class-settings.php:617
+msgid "The active theme or another plugin adjusts the styles with the filter style_switch_styles, it can override the settings in this section."
+msgstr ""
+
+#: includes/class-settings.php:694
+msgid "Settings of the StyleSwitch library for all StyleSwitch widgets. The title of the widget and the type of the form control ( switch, drop-down list, radio buttons ) are set in each widget."
+msgstr ""
+
+#: includes/class-settings.php:695
+msgid "Widgets"
+msgstr ""
+
+#: includes/class-settings.php:697
+msgid "Documentation of StyleSwitch"
+msgstr ""
+
+#: includes/class-settings.php:700
+msgid "The StyleSwitch widget is not in any widget area yet, nothing is shown on the site."
+msgstr ""
+
+#: includes/class-settings.php:710
+msgid "Fixed settings"
+msgstr ""
+
+#: includes/class-settings.php:711
+msgid "These settings of StyleSwitch are given by the plugin."
+msgstr ""
+
+#: includes/class-settings.php:715
+msgid "Setting"
+msgstr ""
+
+#: includes/class-settings.php:716
+msgid "Value"
+msgstr ""
+
+#: includes/class-settings.php:717
+msgid "Why"
+msgstr ""
+
+#: includes/class-settings.php:741
+msgid "The widget writes the settings into the element with this id."
+msgstr ""
+
+#: includes/class-settings.php:742
+msgid "The widget outputs the element <style-switch>, StyleSwitch fills it with the form control."
+msgstr ""
+
+#: includes/class-settings.php:743
+msgid "The cookie listener ( live switching ) and the server side work with all style sheets of the page."
+msgstr ""
+
+#: includes/class-settings.php:744
+msgid "The cookie listener, bundled without changes, has the name hard-coded."
+msgstr ""
+
+#: includes/class-settings.php:745
+msgid "per widget"
+msgstr ""
+
+#: includes/class-settings.php:745
+msgid "Set in each widget."
+msgstr ""
+
+#: includes/class-settings.php:746
+msgid "Used only when there is no container, the widget always outputs one."
+msgstr ""
+
+#: includes/class-settings.php:747
+msgid "The widget needs StyleSwitch to run by itself after it loads."
+msgstr ""
+
+#: includes/class-widget.php:23
+msgid "StyleSwitch – light / dark"
+msgstr ""
+
+#: includes/class-widget.php:26
+msgid "Lets visitors switch the site between the light and the dark color scheme."
+msgstr ""
+
+#: includes/class-widget.php:92
+msgid "Switch (for two styles, otherwise a drop-down list)"
+msgstr ""
+
+#: includes/class-widget.php:93
+msgid "Drop-down list"
+msgstr ""
+
+#: includes/class-widget.php:94
+msgid "Radio buttons"
+msgstr ""
+
+#: includes/class-widget.php:98
+msgid "Title:"
+msgstr ""
+
+#: includes/class-widget.php:102
+msgid "Form control:"
+msgstr ""
+
+#: includes/class-widget.php:109
+msgid "Only one StyleSwitch widget is shown on a page. Visitors without JavaScript or with a browser without the Cookie Store API do not see it."
+msgstr ""
+
+#: includes/class-widget.php:111
+msgid "More settings: Settings → StyleSwitch"
+msgstr ""
+
+#: style-switch.php:487
+msgid "off"
+msgstr ""
+
+#: style-switch.php:490
+msgid "on"
+msgstr ""
+
+#. translators: %s: name of the cookie
+#: style-switch.php:583
+#, php-format
+msgid "When you choose a color scheme of this site, your choice is saved in the cookie \"%s\" in your browser, so that the site is shown in the same color scheme on your next visit. The cookie contains only the addresses of the style sheets of this site and whether each of them is turned on. It is not used to identify or track you."
+msgstr ""
